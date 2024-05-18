@@ -2,7 +2,8 @@
 const cityinput=document.querySelector(".search input");
 const btn=document.querySelector(".search button");
 const img=document.querySelector(".image");
-const url="https://api.openweathermap.org/data/2.5/weather?units=metric&appid=bd6ffa33e473ad075787701752ff2bc0&q=";
+const apikey="bd6ffa33e473ad075787701752ff2bc0";
+const url="https://api.openweathermap.org/data/2.5/weather?units=metric&appid="+apikey+"&q=";
 
 async function weather(city)
 {
@@ -22,31 +23,31 @@ document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
 document.querySelector(".wind").innerHTML=Math.round(data.wind.speed)+" km/h";
 if(data.weather[0].main=="Clear")
 {
-img.src="./images/clear.png";
+img.src="./clear.png";
 }
 else if(data.weather[0].main=="Haze")
 {
-img.src="./images/haze.png";
+img.src="./haze.png";
 }
 else if(data.weather[0].main=="Clouds")
 {
-img.src="./images/clouds.png";
+img.src="./clouds.png";
 }
 else if(data.weather[0].main=="Drizzle")
 {
-img.src="./images/drizzle.png";
+img.src="./drizzle.png";
 }
 else if(data.weather[0].main=="Mist")
 {
-img.src="./images/mist.png";
+img.src="./mist.png";
 }
 else if(data.weather[0].main=="Rain")
 {
-img.src="./images/rain.png";
+img.src="./rain.png";
 }
 else if(data.weather[0].main=="Snow")
 {
-img.src="./images/snow.png";
+img.src="./snow.png";
 }
    document.querySelector(".card2").style.display="block";
    document.querySelector(".error").style.display="none";

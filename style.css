@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-variant:sans-serif ;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   font-family:Verdana, Geneva, Tahoma, sans-serif;  
+}
+body{
+    background-color: #222;
+    background-image: none;
+}
+.card{
+    position: relative;
+    width:100% ;
+    max-width: 500px;
+    text-align: center;
+    margin:auto;
+    margin-top: 50px;
+}
+.card1{ 
+    width:100%;
+    margin :30px auto 0px ;
+    border-radius: 20px;
+    padding:10px;
+    background: transparent;
+  
+}
+.search{
+    
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    border:none;
+} 
+input:focus {  
+    outline: none;
+  }
+.search input{
+    border-radius: 20px;
+    background: transparent;
+    padding:20px 10px;
+    height:40px;
+    flex:1;
+    font-size: 20px;
+    margin-right: 10px;
+    border :0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    color:white;
+}
+.search button{
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    padding: 0px 0px;
+    cursor: pointer;
+    align-items: center;
+    background: white;
+    border: 0px;
+}
+.search button img{
+
+    width:20px;
+    height:20px;   
+}
+.card2
+{   
+    width:100%;
+    max-width: 500px;
+    border-radius: 20px;
+    background:linear-gradient(-60deg,#6aaccd,#55525f) ;
+    text-align: center;
+    margin:20px auto;
+    color:rgba(243, 245, 243, 0.807);
+    padding-top:1px;
+    display:none;
+}
+.temp{
+   
+    font-size: 50px;
+    font-weight: lighter;
+}
+.image{
+width:150px;
+margin-top: -15px;
+margin-bottom: -15px;
+}
+.location{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.col{
+    display: flex;
+}
+p{
+    font-weight: 500;
+}
+.error{
+    
+    color:white;
+    margin-top:30px;
+    font-size: larger;
+    display: none;
+}
+.col img{
+    margin-top: 30px;
+     height:30px;
+     width:30px;
+     margin-bottom: 15px;
+}
+.both{
+    margin-left: 15px;
+
+}
+.wind{
+    margin-bottom: -10px;
+}
+.humidity{
+    margin-bottom: -10px;
+}
